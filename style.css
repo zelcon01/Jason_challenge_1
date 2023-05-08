@@ -9,7 +9,7 @@ img {
 
   body {
     font-family: Arial;
-    margin: 0;
+    margin: 100;
   }
   
   main {
@@ -31,7 +31,7 @@ img {
     color: #fff;
   }
   
-  .card {
+  .project_card {
     /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     flex: 1 0 200px;
