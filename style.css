@@ -9,28 +9,47 @@ img {
 
   body {
     font-family: Arial;
-    margin: 100;
+    margin: 0;
   }
   
   main {
     /* Turns this element into a flexbox */
     display: flex;
-  
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-    margin-top: 2%;
+    height: 100vh;
   }
   
-
-  .heading {
+  .headerbar {
+    /* Turns this element into a flexbox */
     display: flex;
-    /* Defines how to distribute the empty space between child elements */
-    justify-content: space-between;
-    padding: 60px;
+    height: 250px;
+  }
+  .heading {
+    height: 250px;
+    width: 50%;
+    background-color: red;
+    background: #13293d;
+    color: #fff;
+  }
+  .photo {
+    height: 250px;
+    width: 50%;
+    background-color: red;
     background: #13293d;
     color: #fff;
   }
   
+  .sidebar {
+    height: 100vh;
+    width: 25%;
+    background-color: red;
+  }
+
+  .content {
+    height: 100vh;`
+    width: 75%;
+
+  }
+
   .project_card {
     /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
