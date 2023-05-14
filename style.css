@@ -34,6 +34,11 @@ img {
 
   }
 
+  section_three {
+    display: flex;
+  
+    }
+
   .main_text {
     text-indent: 0%;
     width: 75%;
