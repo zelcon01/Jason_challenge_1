@@ -21,6 +21,7 @@ img {
   a {
 
     color: #fff;
+    text-decoration: none;
     
   }
   
@@ -28,17 +29,18 @@ img {
     display: flex;
   }
 
-  section a {
-    color: #000000;
-
+  .section_one {
+    display: flex;
   }
+
   .main_text {
     text-indent: 0%;
-    width: 75%;
+    width: 40%;
   }
   
-  .profile_photo {
-    flex-shrink: 0;
+  .profile_picture {
+    margin-right: 50px;
+    margin-top: 50px;
   }
   
   .headerbar {
@@ -55,23 +57,29 @@ img {
   
   .sidebar {
     height: 100vh;
-    width: 25%;
+    width: 20%;
     background: #13293d;
     margin: 0px;
     color: #fff;
-    
+  }
+
+  .contact_information {
+
+   text-indent: 40px;
   }
 
   .content {
     height: 100vh;
-    width: 75%;
+    width: 80%;
+    background-color: #1f1f1f;
+    color: #fff;
 
   }
 
   .Qualifications {
     /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    flex: 1 0 200px;
+    flex: 1 0 50%;
     padding: 20px;
     text-align: center;
     border-style: solid;
@@ -92,35 +100,46 @@ img {
     color: #fff;
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 880px) {
 
-    /* Change the header background */
+    main {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .content {
+      width: 100%;
+
+    }
     .heading {
       background: #bc0000;
     }
     .sidebar {
       background: #bc0000;
-      order: 2;
       flex-direction: column;
+      width: 100%;
+      text-align: center;
     }
     section {
       display: flex;
       flex-direction: column;
-
+    }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 400px) {
 
-    /* Change the header background */
+  
     .heading {
       background: #00ca14;
     }
     .sidebar {
       background: #00ca14;
-      order: 2;
       flex-direction: column;
     }
     section {
       display: flex;
       flex-direction: column;
+    }
   }
