@@ -22,7 +22,6 @@ img {
 
     color: #fff;
     text-decoration: none;
-    
   }
   
   section {
@@ -53,6 +52,8 @@ img {
     width: 100%;
     background: #13293d;
     color: #fff;
+    padding-left: 50px;
+    
   }
   
   .sidebar {
@@ -61,6 +62,7 @@ img {
     background: #13293d;
     margin: 0px;
     color: #fff;
+    padding-left: 20px;
   }
 
   .contact_information {
