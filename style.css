@@ -10,6 +10,7 @@ img {
   body {
     font-family: Arial;
     margin: 0;
+    background-color: #1f1f1f;
   }
   
   main {
@@ -28,18 +29,17 @@ img {
     display: flex;
   }
 
-  .section_one {
-    display: flex;
-  }
-
   .main_text {
     text-indent: 0%;
     width: 40%;
   }
   
   .profile_picture {
+    flex: 0 0 15%;
     margin-right: 50px;
     margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
   }
   
   .headerbar {
@@ -65,27 +65,28 @@ img {
     padding-left: 20px;
   }
 
-  .contact_information {
+  .profile {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
 
-   text-indent: 40px;
+  .contact_information {
+   padding: 20px
   }
 
   .content {
-    height: 100vh;
     width: 80%;
     background-color: #1f1f1f;
     color: #fff;
 
   }
 
-  .Qualifications {
+  .qualifications {
     /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     flex: 1 0 50%;
-    padding: 20px;
-    text-align: center;
-    border-style: solid;
-    border-width: 0px;
+    padding: 20px
   }
 
   .project_card {
@@ -111,10 +112,24 @@ img {
       flex-direction: column;
     }
 
+    section {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
     .content {
       width: 100%;
-
     }
+
+    .profile_picture {
+      text-align: center;
+    }
+
+    .qualifications{
+      text-align: center;
+    }
+
     .heading {
       background: #bc0000;
     }
@@ -124,24 +139,62 @@ img {
       width: 100%;
       text-align: center;
     }
-    section {
+    .profile {
       display: flex;
-      flex-direction: column;
-    }
+      flex-direction: row;
+      text-align: center;
+
+
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px){
 
-  
-    .heading {
-      background: #00ca14;
-    }
-    .sidebar {
-      background: #00ca14;
+    main {
+      display: flex;
+      height: 100vh;
+      width: 100%;
       flex-direction: column;
     }
+
     section {
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
+
+    .content {
+      width: 100%;
+    }
+
+    .profile_picture {
+      text-align: center;
+    }
+    .profile {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .qualifications{
+      text-align: center;
+    }
+
+    .headerbar{
+      height: 100px;
+      background: #32bc00;
+      text-align: center;
+
+    }
+
+    .heading {
+      background: #32bc00;
+      height: 100px;
+      
+    }
+    .sidebar {
+      background: #32bc00;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    } 
   }
